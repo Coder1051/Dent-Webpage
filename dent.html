@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dent Care</title>
+    <link rel="stylesheet" href="/dent.css">
+    <link rel="stylesheet" href="/lib/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/fontawesome-free-6.5.1-web/css/all.min.css">
+    <style>
+        /* carousel CSS */
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #1b293eb9;
+            z-index: 1;
+        }
+
+        .carousel-item {
+            position: relative;
+        }
+
+        .carousel-caption {
+            z-index: 2;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        li {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        ol li a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="Top">
+        </div>
+        <div class="container">
+            <a class="navbar-brand " style="color:#189ECF ; font-size:30px ; font-weight:bolder ;" href="#"><i
+                    class="fa-solid fa-tooth"></i> Dent Care</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" style="color: #383C3B;" href="#" aria-current="page">Home
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #383C3B;" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #383C3B;" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Pages</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #383C3B;" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #383C3B;" href="#"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"> <button class="btn ms-3"
+                                style="background-color: #189ECF;color: #ffffff;">Appointment</button></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <main style="margin-bottom: 100px;">
+        <div class="container-fluid mb-3 connt">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="/img/carousel-1.jpg" class="w-100 d-block" alt="First slide" />
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption d-none d-lg-block" style="top: 40%;">
+                            <h6>KEEP YOUR TEETH HEALTHY</h6>
+                            <h1 style="font-weight:bolder ; font-size: 50px;">TAKE THE BEST QUALITY <br> DENTAL
+                                TREATMENT</h1>
+                            <a href="#"> <button class="btn btn-lg"
+                                    style="background-color: #189ECF;color: #ffffff;">Appointment</button>
+                            </a>
+                            <a href="#"> <button class="btn btn-lg ms-3"
+                                    style="background-color:#F77D52;color:#ffffff;">Contact US</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/carousel-2.jpg" class="w-100 d-block" alt="Second slide" />
+                        <div class="carousel-overlay">
+
+                        </div>
+                        <div class="carousel-caption top-50 d-none d-lg-block" style="top: 40%;">
+                            <h6>KEEP YOUR TEETH HEALTHY</h6>
+                            <h1 style="font-weight:bolder ; font-size: 50px;">TAKE THE BEST QUALITY <br> DENTAL
+                                TREATMENT</h1>
+                            <a href="#"> <button class="btn btn-lg"
+                                    style="background-color: #189ECF;color: #ffffff;">Appointment</button>
+                            </a>
+                            <a href="#"> <button class="btn btn-lg ms-3"
+                                    style="background-color:#F77D52;color:#ffffff;">Contact US</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="row justify-content-center mb-5 ">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-sm-9 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-2 bg-info">
+                            <h1 class="ms-3 mt-2 " style="color: #ffffff;font-weight: bold;">Opening Hours</h1>
+                            <div class="row mt-3 ms-3" style="color: #ffffff">
+                                <div class="col">
+                                    <h6>Mon-Fri</h6>
+                                </div>
+                                <div class="col">
+                                    <h6>8:00AM - 9:00PM</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-3 ms-3" style="color: #ffffff">
+                                <div class="col">
+                                    <h6>Saturday</h6>
+                                </div>
+                                <div class="col">
+                                    <h6>8:00AM - 7:00PM</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-3 ms-3" style="color: #ffffff">
+                                <div class="col">
+                                    <h6>Sunday</h6>
+                                </div>
+                                <div class="col">
+                                    <h6>8:00AM - 5:00PM</h6>
+                                </div>
+                            </div>
+                            <h2 class="text-center bg-light mt-3 p-2 mx-3">Appointment</h2>
+
+                        </div>
+                        <div class="col-sm-9 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-3"
+                            style="background-color: #1b293eb9;">
+                            <h2 style="color: #ffffff; font-weight: bold;">SEARCH A DOCTOR</h2>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" name="formId1" id="formId1"
+                                    placeholder="Date " />
+                                <label for="formId1">Appointment Date</label>
+                            </div>
+                            <div class="form-floating mt-3">
+                                <input type="text" class="form-control" name="formId1" id="formId1"
+                                    placeholder="Select " />
+                                <label for="formId1">Select a Service </label>
+                            </div>
+                            <h2 class="text-center bg-light mt-3 p-2">Search Doctor</h2>
+
+
+
+                        </div>
+                        <div style="background-color: #F77D52;color: #ffffff; "
+                            class="col-sm-9 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-3">
+                            <h2 class="mt-3" style="font-weight: bold;">Make Appointment</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolor asperiores distinctio
+                                aliquam!</p>
+                            <h1 style="font-weight: bold;">+0123456789</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7">
+                            <h6 style="color: #189ECF;">ABOUT US</h6>
+                            <h1 style="color: #1b293e; font-weight: bold;">
+                                The World's Best Dental Clinic
+                                That You Can Trust :
+                            </h1>
+                            <h4> <em style="color: #585858;">
+                                    Dion dolor chm um sh. Clk in tp lorem amhflea eve psn loom se no orem
+                                    che co fe gs dole</em></h4>
+                            <p>TrTa Wp Av pgp pe.
+                                rem el sit. sed stet no labore loremTR Ta Wp Av pgp pe.
+                                rem el sit. sed stet no labore loremTR Ta Wp Av pgp pe.
+                                labore loremTR Ta Wp Av pgp pe.rem el sit. sed stet no labore loremTR Ta Wp Av pgp pe.
+                                rem el sit. sed stet no labore loremTR Ta Wp Av pgp pe.
+                                rem el sit. sed stet no labore lorem</p>
+                            <div class="row my-3">
+                                <div class="col-5 "> <i class="fa-solid fa-circle-check text-info my-2"> </i> Award
+                                    Winning</div>
+                                <div class="col-5"> <i class="fa-solid fa-circle-check text-info my-2"> </i> 27/7 Opened
+                                </div>
+                                <div class="col-5"> <i class="fa-solid fa-circle-check text-info my-2"> </i>
+                                    Professional Ftaff</div>
+                                <div class="col-5"> <i class="fa-solid fa-circle-check text-info my-2"> </i> Fair Price
+                                </div>
+                            </div>
+                            <div class="btn btn-info btn-lg text-white"> Make Appointment</div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 mt-4">
+                            <img src="/img/about.jpg" alt="about" class="w-100"
+                                style="height: 400px;object-fit: cover;object-position: center;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="my-5 ">
+            <img src="/img/carousel-1.jpg" alt="bgimg" class="w-100"
+                style="object-fit: cover; height: 410px; position:absolute;">
+            <div style="background-color: #1b293eb9; position:relative;top: 0; height: 410px;">
+                <div class="row justify-content-center w-100">
+                    <div class="col-lg-8 col-xl-8 col-xxl-8 col-sm-12 col-md-12">
+                        <div class="row w-100">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 py-5 mt-2 ">
+                                <h2 class="display-6 mx-2" style="color: #ffffff;font-weight:bold;font-size: 1.9 rem; ">
+                                    WE ARE A CERTIFIED AND AWARD
+                                    WINNING
+                                    DENTAL CLINIC YOU CAN TRUST</h2>
+                                <p class="text-white mt-3 mx-2 " style="font-size: 1.5 rem;">Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit.
+                                    Cupiditate magnam
+                                    reprehenderit animi voluptas tempora optio iusto molestias, eveniet sunt explicabo
+                                    deserunt libero debitis ea nulla dolor illum qui officiis nisi.</p>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-white d-xxl-block d-none py-3"
+                                style="height: 410px; background-color: #189ecf8a;">
+                                <h1 style="color: #ffffff;font-weight:bold;" class="mt-4 text-center">Make Appointment
+                                </h1>
+                                <div class="row px-4 mt-3">
+                                    <div class="col-6 ">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>Select A Service</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <label for="floatingSelect">Works with selects</label>
+                                        </div>
+                                        <div class="form-floating my-3 text-dark">
+                                            <input type="text" class="form-control" name="formId1" id="formId1"
+                                                placeholder="Name" />
+                                            <label for="formId2">Your Name</label>
+                                        </div>
+                                        <div class="form-floating my-3 text-dark">
+                                            <input type="text" class="form-control" name="formId1" id="formId1"
+                                                placeholder="Name" />
+                                            <label for="formId2">Appointment Date</label>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>Select Doctor</option>
+                                                <option value="1">Dr Asif</option>
+                                                <option value="2">Dr Ali A Malik</option>
+                                                <option value="3">Dr Strange</option>
+                                            </select>
+                                            <label for="floatingSelect">Works with selects</label>
+                                        </div>
+                                        <div class="form-floating my-3 text-dark">
+                                            <input type="text" class="form-control" name="formId1" id="formId1"
+                                                placeholder="email" />
+                                            <label for="formId2">Email</label>
+                                        </div>
+                                        <div class="form-floating my-3 text-dark">
+                                            <input type="text" class="form-control" name="formId1" id="formId1"
+                                                placeholder="Name" />
+                                            <label for="formId2">Appointment Time</label>
+                                        </div>
+
+                                    </div>
+                                    <h2 class="text-center p-2" style="color: #ffffff;background-color: #1b293e;">Make
+                                        Appointment</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-2">
+            <div class="row w-100 justify-content-center">
+                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5 my-3">
+                            <img src="/img/after.jpg" alt="after" class="w-100">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7 my-3">
+                            <h6 class="text-info mt-2">
+                                Our Services
+                            </h6>
+                            <h1 class="my-4" style="color: #1b293e; font-weight:bold ;">
+                                We Offer The Best Quality <br> Dental Services
+                            </h1>
+                            <div class="row w-100 ">
+                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 my-3 ">
+                                    <img src="/img/service-1.jpg" alt="serv-1" class="w-100">
+                                    <h3 class="py-3 text-center" style="color: #ffffff; background-color: #7eb8c4;">
+                                        Cosmetic Dentistry</h3>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 my-3 ">
+                                    <img src="/img/service-2.jpg" alt="serv-2" class="w-100">
+                                    <h3 class="py-3 text-center" style="color: #ffffff; background-color: #7eb8c4;">
+                                        Dental Implants</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                    <div class="row ">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7 my-3">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 my-3">
+                                    <img src="/img/service-3.jpg" alt="serv-3" class="w-100">
+                                    <h3 class="py-3 text-center" style="color: #ffffff; background-color: #7eb8c4;">
+                                        Dental Bridges</h3>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 my-3">
+                                    <img src="/img/service-4.jpg" alt="serv-4" class="w-100">
+
+                                    <h3 class="py-3 text-center" style="color: #ffffff; background-color: #7eb8c4;">
+                                        Teeth Whitening</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5 bg-info mt-3 my-3"
+                            style="height: 240px;font-size: 1.5 rem;">
+                            <h1 class="text-white text-center mt-3">Make Appointment</h1>
+                            <p class="text-white text-center">
+                                Lorem ipsum dolor laboriosam
+                                eveniet maxime mollitia culpa <br>distinctio fugit sint aliquid!
+                            </p>
+                            <h1 style="color: #ffffff;font-weight: bold;text-align: center;">
+                                +01223456789
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-lg-block d-none">
+            <div class="my-5 ">
+                <img src="/img/carousel-1.jpg" alt="bn-1" class="w-100 bn-img"
+                    style="position: absolute;height: 410px;object-fit: cover;  ">
+                <div class="bn-info" style="position: relative;top: 0%;">
+                    <div class="row justify-content-center w-100">
+                        <div class="col-5 p-4 mt-4" style="background-color: #189ecfb4;">
+                            <h1 class="text-center" style="color: #ffffff;font-weight:bolder;">
+                                Save 30% On Your First <br /> Dental Checkup
+                            </h1>
+                            <p class="text-center text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim magnam eum provident
+                                accusamus hic rem quas architecto quibusdam pariatur modi similique, aliquid
+                                consequuntur dolorem laboriosam totam.
+                            </p>
+                            <div class="text-center my-3">
+                                <a name="" id="" class="btn me-4" style="color:#ffffff;background-color: #1b293e;"
+                                    href="#" role="button">Appointment</a>
+                                <a name="" id="" class="btn " style="color:#1b293e;background-color:#ffffff;" href="#"
+                                    role="button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-3 container">
+            <div class="row mt-5 p-3">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6  mt-5">
+                    <h6 class="text-info">PRICING PLAN</h6>
+                    <h2 style="color: #1b293e;font-weight: bolder; " class="mt-2">We Offer Fear Prices For
+                        Dental Treatment</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi in libero aliquid porro
+                        iste distinctio consequuntur, veritatis perferendis eveniet facere corporis eius
+                        cupiditate quae ipsa dignissimos earum enim ad.
+                    </p>
+                    <h6 class="text-info">Call For Appointment</h6>
+                    <h2 style="color: #1b293e;font-weight: bolder; " class="mt-2">+0123456789</h2>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3  mt-5">
+                    <div class="card cd-img" style="border: #189ECF;">
+                        <img src="/img/price-1.jpg" alt="p-1" class="w-100">
+                        <div class="card-body " style="background-color:#EEF9FF;">
+                            <h5 class="text-center my-3" style="color: #313131;font-weight: bold;">Teeth
+                                Whitening
+                            </h5>
+                            <div class="row my-2">
+                                <div class="col-10">Modern Equipment</div>
+                                <div class="col-2 "><i class="fa-solid fa-check text-info"></i></div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-10">Professional Dentist</div>
+                                <div class="col-2 "><i class="fa-solid fa-check text-info"></i></div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-10">24/7 Call Support</div>
+                                <div class="col-2 "><i class="fa-solid fa-check text-info"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a name="price-btn" id="#" class="btn btn-light" href="#" role="button"
+                            style="position: relative;top:-200px ;left: 40%;">
+                            35$
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mt-5">
+                    <div class="card cd-img" style="border: #189ECF;">
+                        <img src="/img/price-2.jpg" alt="p-2" class="w-100">
+                        <div class="card-body " style="background-color:#EEF9FF;">
+                            <h5 class="text-center my-3" style="color: #313131;font-weight: bold;">Dental Implant
+                            </h5>
+                            <div class="row my-2">
+                                <div class="col-10">Modern Equipment</div>
+                                <div class="col-2 "><i class="fa-solid fa-check text-info"></i></div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-10">Professional Dentist</div>
+                                <div class="col-2 "><i class="fa-solid fa-check text-info"></i></div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-10">24/7 Call Support</div>
+                                <div class="col-2 "><i class="fa-solid fa-check text-info"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a name="price-btn" id="#" class="btn btn-light" href="#" role="button"
+                            style="position: relative;top:-200px ;left: 40%;">
+                            35$
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="d-md-block d-none">
+                <section class="my-5">
+                    <div class="bg-bn-img">
+                        <img src="/img/carousel-2.jpg" alt="bn-2" class="w-100"
+                            style="height: 400px;position: absolute; object-fit:cover; object-position:center;">
+                        <div class=" mb-3"
+                            style="max-width: 540px; background-color: #189ecfcb; position: relative;top:70px;left: 30%; ">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 text-center ">
+                                    <img src="/img/testimonial-1.jpg" alt="t-1" class="my-3 " style="height:100px ;">
+                                    <p class=" text-center">
+                                        This is a wider card with supporting text below as a
+                                        natural lead-in to additional content. This content is a
+                                        little bit longer.
+                                    </p>
+                                    <h3 class="my-3 text-white" style="font-weight: bold;">Client Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section>
+            <div class="my-5">
+                <div class="row w-100 justify-content-center ">
+                    <div class="col-9" style="margin-top: 150px;">
+                        <div class="row ">
+                            <div class="col-sm-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4 mb-3">
+                                <div class="card text-center" style="background-color: #EEF9FF;border: #EEF9FF;">
+                                    <div class="section-title p-5">
+                                        <h5 class="position-relative d-inline-block text-info text-uppercase">Our
+                                            Dentist</h5>
+                                        <h1 class="display-6 mb-4">Meet Our Certified &amp; Experienced Dentist</h1>
+                                        <a href="#" class="btn btn-primary py-3 px-5">Appointment</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="card text-center" style="background-color: #EEF9FF;border: #EEF9FF;">
+                                    <img src="/img/team-1.jpg" alt="t1" class="w-100">
+                                    <h3 class="mt-5" style="color: #1b293e;font-weight: bold;">Dr. John Doe</h3>
+                                    <h6 class="text-info mb-4">Implant Sergeon</h6>
+
+                                </div>
+                                <div class="p-2"
+                                    style="position: relative;text-align: center; top: -150px;left: 27%; background-color: #EEF9FF;width: 160px;">
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-facebook p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-instagram p-2 bg-info"></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-linkedin p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF; ">
+                                        <i class="fa-brands fa-twitter p-2 bg-info"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="card text-center" style="background-color: #EEF9FF;border: #EEF9FF;">
+                                    <img src="/img/team-2.jpg" alt="t2" class="w-100">
+                                    <h3 class="mt-5" style="color: #1b293e;font-weight: bold;">Dr. John Doe</h3>
+                                    <h6 class="text-info mb-4">Implant Sergeon</h6>
+                                </div>
+                                <div class="p-2"
+                                    style="position: relative;text-align: center; top: -150px;left: 27%; background-color: #EEF9FF;width: 160px;">
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-facebook p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-instagram p-2 bg-info"></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-linkedin p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF; ">
+                                        <i class="fa-brands fa-twitter p-2 bg-info"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row w-100 justify-content-center ">
+                    <div class="col-9 ">
+                        <div style="justify-content: space-between;" class="row mt-5 ">
+                            <div class="col-sm-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="card text-center" style="background-color: #EEF9FF;border: #EEF9FF;">
+                                    <img src="/img/team-3.jpg" alt="t3" class="w-100">
+                                    <h3 class="mt-5" style="color: #1b293e;font-weight: bold;">Dr. John Doe</h3>
+                                    <h6 class="text-info mb-4">Implant Sergeon</h6>
+                                </div>
+                                <div class="p-2"
+                                    style="position: relative;text-align: center; top: -150px;left: 27%; background-color: #EEF9FF;width: 160px;">
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-facebook p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-instagram p-2 bg-info"></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-linkedin p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF; ">
+                                        <i class="fa-brands fa-twitter p-2 bg-info"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="card text-center" style="background-color: #EEF9FF;border: #EEF9FF;">
+                                    <img src="/img/team-4.jpg" alt="t4" class="w-100">
+                                    <h3 class="mt-5" style="color: #1b293e;font-weight: bold;">Dr. John Doe</h3>
+                                    <h6 class="text-info mb-4">Implant Sergeon</h6>
+                                </div>
+                                <div class="p-2"
+                                    style="position: relative;text-align: center; top: -150px;left: 27%; background-color: #EEF9FF;width: 160px;">
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-facebook p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-instagram p-2 bg-info"></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-linkedin p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF; ">
+                                        <i class="fa-brands fa-twitter p-2 bg-info"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="card text-center" style="background-color: #EEF9FF;border: #EEF9FF;">
+                                    <img src="/img/team-5.jpg" alt="t5" class="w-100">
+                                    <h3 class="mt-5" style="color: #1b293e;font-weight: bold;">Dr. John Doe</h3>
+                                    <h6 class="text-info mb-4">Implant Sergeon</h6>
+                                </div>
+                                <div class="p-2"
+                                    style="position: relative;text-align: center; top: -150px;left: 27%; background-color: #EEF9FF;width: 160px;">
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-facebook p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-instagram p-2 bg-info"></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF;">
+                                        <i class="fa-brands fa-linkedin p-2 bg-info "></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;color: #EEF9FF; ">
+                                        <i class="fa-brands fa-twitter p-2 bg-info"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="w-100">
+            <div class="row w-100 mt-5 justify-content-center" style="position:absolute;background-color: #1b293e;">
+                <div class="col-10 mt-5">
+                    <div class="row">
+                        <div class="last-1 col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-3">
+                            <ol>
+                                <li class="">
+                                    <a href="#">
+                                        <h1>Quick Links</h1>
+                                    </a>
+                                </li>
+                                <li class="mb-2"><a href="#"><i class="fa-duotone fa-solid fa-caret-right me-2"></i>
+                                        About Us</a> </li>
+                                <li class="mb-2"><a href="#"><i class="fa-duotone fa-solid fa-caret-right me-2"></i> Our
+                                        Services</a> </li>
+                                <li class="mb-3"><a href="#"><i class="fa-duotone fa-solid fa-caret-right me-2"></i>
+                                        Contacts</a> </li>
+                                <li class="mb-2"><a href="#"><i class="fa-duotone fa-solid fa-caret-right me-2"></i>
+                                        More Services</a></li>
+                                <li class="mb-2"><a href=""><i class="fa-duotone fa-solid fa-caret-right me-2"></i>
+                                        Support</a></li>
+                            </ol>
+                        </div>
+                        <div class="last-1 col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-3">
+                            <ol>
+                                <li class="">
+                                    <a href="#">
+                                        <h1>Popular Links</h1>
+                                    </a>
+                                </li>
+                                <li class="mb-2"><a href="#"><i class="fa-duotone fa-solid fa-caret-right me-2"></i>
+                                        About Us</a> </li>
+                                <li class="mb-2"><a href="#"><i class="fa-duotone fa-solid fa-caret-right me-2"></i> Our
+                                        Services</a> </li>
+                                <li class="mb-3"><a href="#"><i class="fa-duotone fa-solid fa-caret-right me-2"></i>
+                                        Contacts</a> </li>
+                                <li class="mb-2"><a href="#"><i class="fa-duotone fa-solid fa-caret-right me-2"></i>
+                                        More Services</a></li>
+                                <li class="mb-2"><a href=""><i class="fa-duotone fa-solid fa-caret-right me-2"></i>
+                                        Support</a></li>
+                            </ol>
+                        </div>
+                        <div class="last-1 col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-3">
+                            <ol>
+                                <li>
+                                    <a href="#">
+                                        <h1>Address</h1>
+                                    </a>
+                                </li>
+                                <li class="loc mb-4"><a href="#"><i class="fa-solid fa-location-dot me-2"></i> 349
+                                        Lahore – Kasur Rd, Lahore,
+                                        Punjab 75300, Pakistan</a></li>
+                                <li class="mb-4"><a href="#"><i class="fa-solid fa-phone me-2"></i> +923001387387</a>
+                                </li>
+                                <li class="mb-4"><a href="#"><i class="fa-solid fa-envelope me-2"></i>
+                                        www.evslearning.com</a> </li>
+                            </ol>
+                        </div>
+                        <div class="last-1  col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-3">
+                            <ol>
+                                <li>
+                                    <a href="#">
+                                        <h1>Follow Us</h1>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook p-2 bg-info "></i>
+                                        <i class="fa-brands fa-instagram p-2 bg-info mx-2"></i>
+                                        <i class="fa-brands fa-linkedin p-2 bg-info me-2"></i>
+                                        <i class="fa-brands fa-twitter p-2 bg-info"></i>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nb pt-5 " style="position: relative;top:-100px;">
+            <div class="container">
+                <div class="p-5 bg-info">
+                    <form class="mx-auto" style="max-width: 600px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                            <button class="btn btn-dark px-4">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div" style="position: relative;left: 80%;top: 80px;">
+            <a href="#" class="btn btn-lg btn-info btn-lg-square "><i class="fa fa-arrow-up"></i></a>
+            </div>
+    </footer>
+    <script src="/lib/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+
+</html>
